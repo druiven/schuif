@@ -41,6 +41,7 @@ body {
     position: absolute;
     z-index: 1;
     cursor: pointer;
+    display: none;
     &.selected {
       -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
       -moz-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
