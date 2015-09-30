@@ -1,0 +1,104 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+body, div, img, p, button, input, select, textarea, a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#site-holder {
+  width: 100%;
+  height: 100%;
+}
+
+#shuffle-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .shuffle-element {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    &.selected {
+      -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
+      -moz-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
+      box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
+      z-index: 10000;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 240px) {
+
+}
+
+@media only screen and (min-width: 360px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 540px) {
+
+}
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 720px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 854px) {
+
+}
+
+@media only screen and (min-width: 960px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
