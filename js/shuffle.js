@@ -119,7 +119,7 @@ jQuery.fn.draggable = function() {
             left:left-w/2,
             width: w,
             height: h
-        });
+        }).data('schaal',schaal);
     };
     var moveMeEnd=function(e){
         e.preventDefault();
