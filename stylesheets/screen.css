@@ -106,16 +106,35 @@ body {
   overflow: hidden;
 }
 /* line 40, ../sass/screen.scss */
+#shuffle-holder h1 {
+  width: 100%;
+  font-size: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+/* line 47, ../sass/screen.scss */
 #shuffle-holder .shuffle-element {
   position: absolute;
   z-index: 1;
   cursor: pointer;
   display: none;
+  width: 25%;
+  height: 18%;
+  background-repeat: no-repeat;
+  background-postion: center center;
+  background-size: 100% 100%;
 }
-/* line 45, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 #shuffle-holder .shuffle-element.selected {
-  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.46);
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.46);
-  z-index: 10000;
+  /*-webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
+  -moz-box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.46);*/
+  z-index: 100000;
+}
+
+@media only screen and (min-width: 720px) {
+  /* line 91, ../sass/screen.scss */
+  #shuffle-holder h1 {
+    font-size: 250%;
+  }
 }
