@@ -33,14 +33,7 @@ function init(){
             'height': (schaal*h)
         }).data('w',w).data('h',h).show();
     }
-    /*jQuery(".shuffle-element").each(function(){
-        jQuery(this).css({
-            'width':jQuery('img',this).width(),
-            'height':jQuery('img',this).height(),
-            'left':Math.round(Math.random()*(jQuery(window).width()-jQuery('img',this).width())),
-            'top':Math.round(Math.random()*(jQuery(window).height()-jQuery('img',this).height()))
-        }).show();
-    })*/
+
     if(is_touch_device()){
         jQuery(".shuffle-element").draggable();
     }else{
@@ -108,7 +101,7 @@ jQuery.fn.draggable = function() {
         var orig = e.originalEvent;
         var w,h,schaal,left,top;
         schaal=1.5-orig.changedTouches[0].pageY/windowHeight;
-        //if(schaal<.2)schaal=.2;
+
         w=jQuery(this).data('w')*schaal;
         h=jQuery(this).data('h')*schaal;
 
